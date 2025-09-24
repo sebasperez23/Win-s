@@ -11,6 +11,57 @@ body {
   background: #f4f4f4;
   color: #333;
 }
+/* Estilos generales (desktop por defecto) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------- Responsive -------- */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 992px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+/* Celulares (pantallas pequeñas) */
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .productos {
+    grid-template-columns: 1fr;
+  }
+
+  .producto {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+  }
+}
+
 
 /* Header y navegación */
 header {

@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header y navegación */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: aquamarine;
+  color: #e810e4;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #0c0c0c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #fcfcfc;
+}
+
+/* Efecto general para todos los h2 */
+h2 {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h2:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Colores específicos por sección */
+#inicio h2:hover {
+  color: #6c5ce7; /* morado */
+}
+
+#servicios h2:hover {
+  color: #0984e3; /* azul */
+}
+
+#productos h2:hover {
+  color: #e17055; /* naranja */
+}
+
+#historia h2:hover {
+  color: #00b894; /* verde */
+}
+
+#contactos h2:hover {
+  color: #d63031; /* rojo */
+}
+
+/* Secciones */
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.seccion-gif img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.seccion-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion-info .texto {
+  flex: 1;
+  min-width: 250px;
+}
+
+.seccion-info .video {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Productos */
+.seccion-productos {
+  background: #fff;
+}
+
+.seccion-productos h2 {
+  margin-bottom: 2rem;
+}
+
+.producto {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 300px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.producto .boton a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.producto .boton a:hover {
+  background: #20b955;
+}
+
+/* Botón flotante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+}
+
